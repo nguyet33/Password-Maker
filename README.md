@@ -1,4 +1,4 @@
-# Password Generator 
+# Password-Maker
 
 ## USER STORY
 AS AN employee with access to sensitive data
