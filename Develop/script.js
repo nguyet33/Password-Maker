@@ -18,6 +18,34 @@ function generatePassword() {
   alert(`Thank you, your password will contain ${pwdLength} characters`);
 
   // The user is prompted to confirm whether or not they wish to include lowercase, uppercase, numeric, and/or special characters.
+  var characterTypes = [];
+
+  // Confirm character type prompts - verify in console log
+  var lowerCase = confirm("Please click OK to include lowercase letters, otherwise click CANCEL");
+  if (lowerCase === true) {
+    characterTypes.push(0);
+  }
+  console.log(lowerCase);
+
+  var upperCase = confirm("Please click OK to include uppercase letters, otherwise click CANCEL");
+  if (upperCase === true) {
+    characterTypes.push(1);
+  }
+  console.log(upperCase);
+
+  var numeric = confirm("Please click OK to include numbers, otherwise click CANCEL");
+  if (numeric === true) {
+    characterTypes.push(2);
+  }
+  console.log(numeric);
+
+  var special = confirm("Please click OK to include special characters, otherwise click CANCEL");
+  if (special === true) {
+    characterTypes.push(3);
+  }
+  console.log(special);
+
+  console.log(characterTypes);
 
 }
 
